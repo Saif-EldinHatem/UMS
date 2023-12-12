@@ -1,0 +1,309 @@
+body{
+    color:#677294;
+}
+section{
+    margin-bottom:20px;
+}
+
+/* ---------------------------buttons-------------------------- */
+.myButton{
+    margin-top: 50px;
+    border-style:solid;
+    border-width:2px;
+    border-radius:23px;
+    height:45px;
+    transition: 0.5s;
+    padding: 0 20px;
+
+}
+
+.myButton a{
+    color:white;
+    transition: 0.5s;
+}
+
+.orangeButton{
+    border-color: rgb(243, 174, 79);
+    background-color:#f3af4e;
+    box-shadow: 0 20px 50px rgba(243, 174, 79,0);
+}
+
+.orangeButton:hover{
+    background-color: transparent;
+    box-shadow: 0 8px 0 rgba(243, 174, 79,1);
+}
+
+.orangeButton:hover a{
+    color:#f3af4e;
+}
+
+
+.blueButton{
+    background-color: rgb(112, 174, 250);
+    border-color: #6fadfa;
+    box-shadow: 0 20px 50px rgba(112, 174, 250, 0);
+    color:white;
+}
+
+.blueButton:hover{
+    background-color:white;
+    box-shadow: 0 8px 0 rgba(112, 174, 250, 1);
+    color:#6fadfa;
+}
+
+.blueButton:hover a{
+    color:#6fadfa;
+}
+
+
+/* -----------------------------------NAVBAR--------------------------- */
+
+#nav{
+ background-color: #1c335f;
+ height: 50px;   
+ display: flex;
+ align-items: center;
+}
+
+#inner-nav{
+    height:25px;
+    width:100%;
+}
+
+#inner-nav >.row{
+    height: 100%;
+    width:100%
+}
+
+#inner-nav >div > div{
+    height: 100%;
+}
+
+#inner-nav ul{
+    display:flex;
+    height:100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#nav li{
+    list-style: none;
+    margin-left: 15px;
+    font-size:12px;
+}
+
+#nav a{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nav a{
+    transition: color 0.5s;
+}
+
+#nav a:hover{
+    color: #6fadfa;
+}
+
+#eagle{
+    height:30px;
+}
+
+.contact img{
+    height:14px;
+}
+
+.contact span{
+    color:gray;
+}
+
+header .container{
+    padding: 0 200px 0 100px;
+}
+
+header .row{
+    height:100px;
+}
+
+
+header .row > div {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------carousel section--------------------------------------- */
+
+.carousel-item{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    transform: scaleX(-1);
+    height:650px;
+    color: white;
+}
+
+.item1{
+    background-image: url("../images/header2.jpg");
+}
+
+.item2{
+    background-image: url("../images/header-bg3\ \(6\).jpg");
+}
+
+.item3{
+    background-image: url("../images/header.jpg");
+}
+
+.carousel-item .container{
+    width:50%;
+}
+
+.carousel-item > div{
+    height:100%;
+}
+
+#carousel-section p{
+    font-size: 13px;
+}
+
+
+.unflip{
+    transform: scaleX(-1);
+}
+
+/* -------------------------Services Section---------------------- */
+
+#services-section{
+    margin-top:20px;
+}
+
+#services-section .container{
+    width:57%;
+
+}
+
+.boxes > *{
+    background-color:#1c335f;
+    height: 200px;
+    border-radius:30px;
+    color:white;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    padding:23px;
+}
+
+.boxes > *:hover{
+    transform: translateY(-10px);
+    opacity: 0.7;
+}
+
+.boxes h6{
+    font-size:15px;
+}
+
+#login-image{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.login-info{
+    padding:50px 20px 10px 20px;
+    height: 100%;
+    width: 100%;
+    color:black;
+
+}
+
+
+#colleges{
+    width:100%;
+    border-radius:5px;
+    height:30px;
+    padding:0 10px;
+    background-color:white;
+    color:black;
+    font-size:smaller;
+    border-color: gray;
+
+}
+
+.inputs{
+    width:100%;
+    border-radius:5px;
+    height:30px;
+    padding:0 10px;
+    background-color:white;
+    font-size:smaller;
+    border-width: 1px;
+    border-color: gray;
+}
+
+#login-button{
+    display:flex;
+    justify-content: center;
+}
+
+#login{
+    width:45%;
+    margin-bottom: 20px;
+}
+
+#login-section .container{
+    width:60%;
+}
+
+#login-section a{
+    color:grey;
+    font-size:12px;  
+    transition: color 0.5s;  
+}
+
+#login-section a:hover{
+    color:orange;
+}
+
+#issues{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* -----------------------------------search-section----------------------------------- */
+#search-section{
+    margin-top: 200px;
+    /* font-:initial; */
+}
+
+#search-section > .container{
+    display:flex;
+    justify-content: center;
+}
+
+.button-grid-container{
+    width:100%;
+    margin: 0 auto;
+}
+
+.search-icon{
+    background-color:#1c335f;
+    height:65px;
+    border-radius: 9px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+
+@media (max-width: 990px){
+    #nav{
+        height:75px;
+    }
+}
